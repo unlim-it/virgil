@@ -20,7 +20,7 @@ var signature = Virgil.Crypto.sign(publicKey, privateKey);
 var isValid = Virgil.Crypto.verify(publicKey, publicKey);
 ```
 
-## Revoke Public Key
+## Public Key revocation check 
 ```javascript
 var keysService = new Virgil.KeysService("{ACCESS_TOKEN}");
 keysService.PublicKeys.getAsync(publicKeyId)
