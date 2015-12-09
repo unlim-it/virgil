@@ -23,7 +23,7 @@ var isValid = Virgil.Crypto.verify(publicKey, publicKey);
 ## Revoke Public Key
 ```javascript
 var keysService = new Virgil.KeysService("{ACCESS_TOKEN}");
-keysService.PublicKeys.get(publicKeyId)
+keysService.PublicKeys.getAsync(publicKeyId)
     .then(function(publicKeyResult){
       // occurs when public key is found.
     }),
