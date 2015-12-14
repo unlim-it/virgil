@@ -18,7 +18,7 @@ var signature = Virgil.Crypto.sign(publicKey, privateKey);
 
 ## Verify Public key
 ```javascript
-var isValid = Virgil.Crypto.verify(publicKey, publicKey);
+var isValid = Virgil.Crypto.verify(signature, publicKey);
 ```
 
 ## Public Key revocation 
