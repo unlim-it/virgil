@@ -22,8 +22,8 @@ var isValid = Virgil.Crypto.verify(publicKey, publicKey);
 
 ## Public Key revocation check 
 ```javascript
-var keysService = new Virgil.KeysService("{ACCESS_TOKEN}");
-keysService.PublicKeys.getAsync(publicKeyId)
+var keysClient = new Virgil.SDK.KeysClient("{ACCESS_TOKEN}");
+keysClient.PublicKeys.getAsync(publicKeyId)
     .then(function(publicKeyResult){
       // occurs when public key is found.
     }),
