@@ -31,7 +31,6 @@ keysClient.PublicKeys.revoke(publicKeyId, privateKey)
 
 ## Public Key revocation check 
 ```javascript
-var keysClient = new Virgil.SDK.KeysClient("{ACCESS_TOKEN}");
 keysClient.PublicKeys.get(publicKeyId)
     .then(function(publicKeyResult){
       // occurs when public key is found.
